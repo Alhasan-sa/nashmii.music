@@ -4,14 +4,14 @@ import { IRhythmBotConfig, RhythmBot } from './bot';
 
 const configPath = projectDir('../bot-config.json');
 if (!fs.existsSync(configPath)) {
-    writeJson({ discord: { token: '<BOT-TOKEN>' } }, configPath);
+    writeJson({ discord: { token: '<NzQ0Njc3ODM2MjMyNzIwNDY0.XzmtRw.axXoNbXhbfvGm7ocmnojP04UCg0>' } }, configPath);
 }
 
 let config: IRhythmBotConfig = requireFile('../bot-config.json');
 
 const bot = new RhythmBot(config);
 
-if (!!config && config.discord.token === '<BOT-TOKEN>') {
+if (!!config && config.discord.token === '<NzQ0Njc3ODM2MjMyNzIwNDY0.XzmtRw.axXoNbXhbfvGm7ocmnojP04UCg0>') {
     bot.logger.debug('Invalid Token - Create valid token in the Discord Developer Portal');
     console.log('Invalid Token - Create valid token in the Discord Developer Portal');
     process.exit(0);
